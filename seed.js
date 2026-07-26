@@ -5,7 +5,7 @@ import path from 'path';
 
 const envConfig = dotenv.parse(fs.readFileSync(path.resolve('.env.local')));
 
-const SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhkbGdhYXpvam93bXltbXhwZGpnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NTAwMzc1NSwiZXhwIjoyMTAwNTc5NzU1fQ.nSNAD6EVqz88wzxxCh5UPV3ZGWQJHTItSmJVs89aBOU";
+const SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvYXJpbmlndGZ0ZXBncmt2eG94Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MjY5Mzc0NSwiZXhwIjoyMDk4MjY5NzQ1fQ.irotVPHZqXgBo-j4h6hEIMztGrInnao5o0C-SnIoOPk";
 
 const supabase = createClient(envConfig.VITE_SUPABASE_URL, SERVICE_ROLE_KEY);
 
